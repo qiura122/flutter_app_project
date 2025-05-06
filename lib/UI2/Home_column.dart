@@ -8,8 +8,8 @@ class Home_column extends StatelessWidget {
       body: Container(
         color: Colors.deepPurpleAccent,
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.end,
-          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.max,
           children: [
             Text('I Komang Emo Wijaya Kusuma', style: TextStyle(fontSize: 20)),
