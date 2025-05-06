@@ -10,6 +10,10 @@ import 'package:flutter_app_project/UI2/Home_column.dart';
 import 'package:flutter_app_project/UI2/Home_scsv.dart';
 import 'package:flutter_app_project/UI3/Home_state.dart';
 import 'package:flutter_app_project/UI3/Home_stateless.dart';
+import 'package:flutter_app_project/UI4/Grid_view.dart';
+import 'package:flutter_app_project/UI4/Grid_view_count.dart';
+import 'package:flutter_app_project/UI4/List_view_builder.dart';
+import 'package:flutter_app_project/UI4/List_view_text.dart';
 
 void main() {
   runApp(MyApp());
@@ -21,7 +25,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeStateStateless(),
+      home: GridViewCount(),
     );
   }
 }
