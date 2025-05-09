@@ -9,7 +9,7 @@ class Home_row extends StatelessWidget {
         color: Colors.deepPurpleAccent,
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.end,
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           mainAxisSize: MainAxisSize.max,
           children: [
             Text('I Komang Emo Wijaya Kusuma', style: TextStyle(fontSize: 20)),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_project/Modul_Gambar/modul_image.dart';
 import 'package:flutter_app_project/UI1/home.dart';
 import 'package:flutter_app_project/UI1/home_appbar.dart';
 import 'package:flutter_app_project/UI1/home_button&padding.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ListViewText(),
+      home: Home_row(),
     );
   }
 }
