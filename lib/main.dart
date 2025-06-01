@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_project/Modul_Form/form1.dart';
+import 'package:flutter_app_project/Modul_Form/form2.dart';
 import 'package:flutter_app_project/Modul_Gambar/modul_image.dart';
 import 'package:flutter_app_project/Modul_Navigator/navbar.dart';
 import 'package:flutter_app_project/Modul_Navigator/navdraw.dart';
@@ -26,6 +28,9 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: Navdraw());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Form2()
+    );
   }
 }
