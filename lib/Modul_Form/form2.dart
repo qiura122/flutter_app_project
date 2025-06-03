@@ -9,7 +9,7 @@ class _Form2State extends State<Form2> {
   final _formKey = GlobalKey<FormState>();
 
   double nilaiSlider = 50;
-  bool nilaiChackbox = false;
+  bool nilaiCheckbox = false;
   bool nilaiSwitch = true;
 
   @override
@@ -67,34 +67,34 @@ class _Form2State extends State<Form2> {
                   subtitle: Text(
                     "Silahkan baca syarat dan ketentuan sebelum melanjutkan",
                   ),
-                  value: nilaiChackbox,
+                  value: nilaiCheckbox,
                   onChanged: (value) {
                     setState(() {
-                      nilaiChackbox = value!;
+                      nilaiCheckbox = value!;
                     });
                   },
                 ),
                 SwitchListTile(
                   title: Text("Aktifkan Notifikasi"),
                   value: nilaiSwitch,
-                  activeTrackColor: Colors.deepOrange,
-                  activeColor: Colors.deepOrangeAccent,
+                  activeTrackColor: Colors.deepOrangeAccent,
+                  activeColor: Colors.deepPurpleAccent,
                   onChanged: (value) {
                     setState(() {
                       nilaiSwitch = value;
                     });
                   },
                 ),
-                // Slider(
-                //   value: nilaiSlider,
-                //   min: 0,
-                //   max: 100,
-                //   onChanged: (value) {
-                //     setState(() {
-                //       nilaiSlider = value;
-                //     });
-                //   },
-                // ),
+                Slider(
+                  value: nilaiSlider,
+                  min: 0,
+                  max: 100,
+                  onChanged: (value) {
+                    setState(() {
+                      nilaiSlider = value;
+                    });
+                  },
+                ),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.deepOrangeAccent,
@@ -103,7 +103,7 @@ class _Form2State extends State<Form2> {
                     if (_formKey.currentState!.validate()) {}
                   },
                   child: Text('Submit', style: TextStyle(color: Colors.white)),
-                )
+                ),
               ],
             ),
           ),
