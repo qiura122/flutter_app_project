@@ -17,6 +17,7 @@ class _NavdrawState extends State<Navdraw> {
           onPressed: () => _scaffoldKey.currentState!.openDrawer(),
         ),
         title: Text('Navigation Drawer'),
+        centerTitle: true,
         backgroundColor: Colors.deepOrangeAccent,
         actions: <Widget>[
           IconButton(
@@ -53,7 +54,7 @@ class DrawerWidget extends StatelessWidget {
           _drawerItem(
             icon: Icons.group,
             text: 'Shared',
-            onTap: () => print("Tap Shared"),
+            onTap: () => print("Tap Shared Files"),
           ),
           _drawerItem(
             icon: Icons.access_time,
