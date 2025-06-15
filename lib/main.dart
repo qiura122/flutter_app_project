@@ -5,6 +5,7 @@ import 'package:flutter_app_project/Modul_Gambar/modul_image.dart';
 import 'package:flutter_app_project/Modul_Navigator/navbar.dart';
 import 'package:flutter_app_project/Modul_Navigator/navdraw.dart';
 import 'package:flutter_app_project/Modul_SQLite/Modul_Kontak/list_kontak.dart';
+import 'package:flutter_app_project/Modul_SQLite/Modul_Pegawai/ui/list_pegawai.dart';
 import 'package:flutter_app_project/UI1/home.dart';
 import 'package:flutter_app_project/UI1/home_appbar.dart';
 import 'package:flutter_app_project/UI1/home_button&padding.dart';
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ListKontak()
+      home: ListPegawaiPage()
     );
   }
 }
