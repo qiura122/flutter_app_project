@@ -1,4 +1,4 @@
-import 'package:flutter_app_project/Modul_Kontak/model/kontak.dart';
+import 'package:flutter_app_project/Modul_SQLite/Modul_Kontak/model/kontak.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:sqflite/sqlite_api.dart';
 import 'package:path/path.dart';
