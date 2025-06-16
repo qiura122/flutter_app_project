@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_project/Modul_API/api1.dart';
+import 'package:flutter_app_project/Modul_API/api2.dart';
 import 'package:flutter_app_project/Modul_Form/form1.dart';
 import 'package:flutter_app_project/Modul_Form/form2.dart';
 import 'package:flutter_app_project/Modul_Gambar/modul_image.dart';
@@ -32,7 +34,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ListPegawaiPage()
+      home: Api2()
     );
   }
 }
