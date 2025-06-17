@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 class Api1 extends StatelessWidget {
-  final String apiUrl = "https://reqres.in/api/users?per_page=6";
+  final String apiUrl = "https://reqres.in/api/users";
 
   Future<List<dynamic>> _fetchData() async {
     var result = await http.get(Uri.parse(apiUrl));
@@ -32,7 +32,8 @@ class Api1 extends StatelessWidget {
                           NetworkImage(snapshot.data[index]['avatar']),
                     ),
                     title: Text(snapshot.data[index]['first_name'] +
-                        ' ' +
+                        // ignore: prefer_interpolation_to_compose_strings
+                        " " +
                         snapshot.data[index]['last_name']),
                     subtitle: Text(snapshot.data[index]['email']),
                   );
