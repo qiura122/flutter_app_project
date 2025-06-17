@@ -4,10 +4,13 @@ import 'package:flutter_app_project/Modul_API/api2.dart';
 import 'package:flutter_app_project/Modul_Form/form1.dart';
 import 'package:flutter_app_project/Modul_Form/form2.dart';
 import 'package:flutter_app_project/Modul_Gambar/modul_image.dart';
+import 'package:flutter_app_project/Modul_LBS/lbs.dart';
+import 'package:flutter_app_project/Modul_MobileSensor/mobile_sensor.dart';
 import 'package:flutter_app_project/Modul_Navigator/navbar.dart';
 import 'package:flutter_app_project/Modul_Navigator/navdraw.dart';
 import 'package:flutter_app_project/Modul_SQLite/Modul_Kontak/list_kontak.dart';
 import 'package:flutter_app_project/Modul_SQLite/Modul_Pegawai/ui/list_pegawai.dart';
+import 'package:flutter_app_project/Modul_Security/secure_storage.dart';
 import 'package:flutter_app_project/UI1/home.dart';
 import 'package:flutter_app_project/UI1/home_appbar.dart';
 import 'package:flutter_app_project/UI1/home_button&padding.dart';
@@ -34,7 +37,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Api2()
+      home: LocationMapScreen()
     );
   }
 }
